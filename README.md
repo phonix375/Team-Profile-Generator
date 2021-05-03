@@ -2,6 +2,11 @@
   ## Description
   Application To generate a page with all members of your team and the contacts. 
 With this app you are able to organize all the contact information about your team in one location and share it on the web as this will generate an HTML file you can host internally or on the net
+
+link to Video: 
+https://bootcampspot.instructuremedia.com/embed/12195a56-144b-4957-8d6a-5422026ff9f8
+
+
   ## Table of content
   * [Discreption](#Description)
 * [Installation](#Installation)
