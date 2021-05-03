@@ -138,24 +138,22 @@ const promptTeamMember = manager => {
 
 const mockData = [
     new Manager('Manager','Alex kotliar',1,'kotliar.alex@gmail.com','555-555-555'),
-      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','andriibessarab'),
-      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','andriibessarab'),
-      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','andriibessarab'),
-      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','andriibessarab'),
-      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','andriibessarab'),
-      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','andriibessarab'),
-      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','andriibessarab')
+      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','phonix375'),
+      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','phonix375'),
+      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','phonix375'),
+      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','phonix375'),
+      new Engineer ('Engineer','Andrii bessarab',2,'bessarab@gmail.com','phonix375'),
+      new Intern ('Intern','Andrii bessarab',2,'bessarab@gmail.com','ORT Tech'),
+      new Intern ('Intern','Andrii bessarab',2,'bessarab@gmail.com','ORT Tech')
 
 ]
 
-// promptManager().then(promptTeamMember).then(() => {
-//     htmlGenerator.createHtml(members);
-// });
-
-const content = htmlGenerator(mockData);
-fs.writeFile('./dist/index.html',content,function(err){
-    if(err){
-        return console.log(err)
-    }
-    console.log("Index file was created!")
-})
+promptManager().then(promptTeamMember).then(() => {
+    const content = htmlGenerator(members);
+    fs.writeFile('./dist/index.html',content,function(err){
+        if(err){
+            return console.log(err)
+        }
+        console.log("Index file was created!")
+    })
+});
