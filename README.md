@@ -1,6 +1,7 @@
   # Team Profile Generator
   ## Description
-  Application To generate a page with all members of your team and the contacts.
+  Application To generate a page with all members of your team and the contacts. 
+With this app you are able to organize all the contact information about your team in one location and share it on the web as this will generate an HTML file you can host internally or on the net
   ## Table of content
   * [Discreption](#Description)
 * [Installation](#Installation)
